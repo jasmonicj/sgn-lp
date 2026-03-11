@@ -1,0 +1,567 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+
+  <!-- ナビ -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+    <div class="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
+      <span class="text-lg font-bold text-gray-800 tracking-tight">Social Good Natives</span>
+      <nav class="hidden sm:flex items-center gap-6 text-sm text-gray-600">
+        <a href="#about" class="hover:text-emerald-600 transition-colors">About</a>
+        <a href="#services" class="hover:text-emerald-600 transition-colors">Services</a>
+        <a href="#members" class="hover:text-emerald-600 transition-colors">Members</a>
+        <a href="#join" class="hover:text-emerald-600 transition-colors">Join</a>
+      </nav>
+      <a
+        href="#contact"
+        class="text-sm bg-emerald-600 text-white px-4 py-1.5 rounded-full font-medium hover:bg-emerald-700 transition-colors"
+      >
+        お問い合わせ
+      </a>
+    </div>
+  </header>
+
+  <main class="pt-14">
+
+    <!-- ── Hero ────────────────────────────────────────────────── -->
+    <section
+      aria-labelledby="hero-heading"
+      class="min-h-[90vh] flex flex-col items-center justify-center text-center px-4 bg-gradient-to-b from-emerald-50 to-white"
+    >
+      <p class="text-sm tracking-widest text-emerald-600 mb-4 uppercase font-medium">General Incorporated Association</p>
+      <h1
+        id="hero-heading"
+        class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 leading-tight mb-4"
+      >
+        ソーシャルグッドを、<br class="sm:hidden" />あたりまえに。
+      </h1>
+      <p class="text-lg sm:text-xl text-gray-500 mb-2 max-w-lg">
+        サステナブル・エシカルな社会をリードする<br />デジタルネイティブ世代のコミュニティ。
+      </p>
+      <p class="text-base text-gray-400 mb-10 max-w-md">
+        企業と個人をつなぎ、社会をよくする「問い」を共創する。
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a
+          href="#join"
+          class="bg-emerald-600 text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg hover:bg-emerald-700 transition-all hover:scale-105 active:scale-95"
+        >
+          メンバーになる
+        </a>
+        <a
+          href="#contact"
+          class="bg-white text-emerald-600 text-lg font-bold px-8 py-4 rounded-full shadow-lg border-2 border-emerald-600 hover:bg-emerald-50 transition-all hover:scale-105 active:scale-95"
+        >
+          企業の方はこちら
+        </a>
+      </div>
+
+      <!-- スクロールヒント -->
+      <div class="mt-16 animate-bounce text-gray-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ── About ──────────────────────────────────────────────── -->
+    <section id="about" aria-labelledby="about-heading" class="py-20 bg-white px-4">
+      <div class="max-w-3xl mx-auto">
+        <p class="text-sm text-emerald-600 font-bold tracking-widest uppercase mb-2 text-center">About</p>
+        <h2 id="about-heading" class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-6">
+          Social Good Natives とは
+        </h2>
+        <p class="text-gray-500 text-base sm:text-lg leading-relaxed text-center mb-12">
+          Social Good Natives（SGNs）は、<strong class="text-gray-700">「ソーシャルグッド」を当然の価値観とするデジタルネイティブ世代</strong>を中心としたコミュニティ・エージェントです。<br /><br />
+          エシカルファッション、フードロス、若者のエンパワメントなど多岐にわたるテーマで活動・発信する個人やユニットが在籍し、<strong class="text-emerald-600">企業やメディアに対してソーシャルグッド軸での「問い」を提供</strong>しています。
+        </p>
+
+        <!-- ミッション・ビジョン -->
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="bg-emerald-50 rounded-2xl p-8 text-center">
+            <p class="text-xs text-emerald-600 font-bold tracking-widest uppercase mb-3">Mission</p>
+            <p class="text-gray-700 font-bold text-lg leading-relaxed">
+              ソーシャルグッドな概念から<br />社会を再解釈し、<br />世代を超えて共創する。
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-8 text-center">
+            <p class="text-xs text-emerald-600 font-bold tracking-widest uppercase mb-3">Vision</p>
+            <p class="text-gray-700 font-bold text-lg leading-relaxed">
+              サステナブル・エシカルが<br />「あたりまえ」になる社会を<br />次の世代とともにつくる。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 活動テーマ ──────────────────────────────────────────── -->
+    <section class="py-20 bg-emerald-50 px-4">
+      <div class="max-w-5xl mx-auto">
+        <p class="text-sm text-emerald-600 font-bold tracking-widest uppercase mb-2 text-center">Activities</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-12">
+          活動テーマ
+        </h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+          <article class="bg-white rounded-2xl p-6 shadow-sm text-center">
+            <div class="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">エシカルファッション</h3>
+            <p class="text-sm text-gray-500">ファッションの透明性を追求し、サステナブルな衣服の循環を推進</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 shadow-sm text-center">
+            <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" /></svg>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">フードロス削減</h3>
+            <p class="text-sm text-gray-500">食品廃棄の課題に取り組み、エシカルな消費文化を広める</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 shadow-sm text-center">
+            <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">若者エンパワメント</h3>
+            <p class="text-sm text-gray-500">次世代リーダーの育成と、若者の声を社会に届ける場を提供</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 shadow-sm text-center">
+            <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">SDGs推進</h3>
+            <p class="text-sm text-gray-500">持続可能な開発目標の達成に向けた啓発活動と実践</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 企業向けサービス ────────────────────────────────────── -->
+    <section id="services" aria-labelledby="services-heading" class="py-20 bg-white px-4">
+      <div class="max-w-5xl mx-auto">
+        <p class="text-sm text-emerald-600 font-bold tracking-widest uppercase mb-2 text-center">For Companies</p>
+        <h2 id="services-heading" class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-4">
+          企業・団体の皆さまへ
+        </h2>
+        <p class="text-center text-gray-500 text-sm mb-12 max-w-xl mx-auto">
+          ソーシャルグッド世代の視点から、御社の事業に新しい「問い」と価値を提供します。
+        </p>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div class="border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" /></svg>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">ソーシャルグッドマーケティング</h3>
+            <p class="text-sm text-gray-500">Z世代・ミレニアル世代に響くサステナブル軸のマーケティング戦略を企画・実行します。</p>
+          </div>
+
+          <div class="border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">講演・登壇</h3>
+            <p class="text-sm text-gray-500">ソーシャルグッド、エシカル消費、サステナビリティに関する講演・パネルディスカッションを提供します。</p>
+          </div>
+
+          <div class="border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">執筆・メディア</h3>
+            <p class="text-sm text-gray-500">ソーシャルグッド視点での記事執筆、メディア共創。毎日新聞「Social Good Opinion」等の実績。</p>
+          </div>
+
+          <div class="border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">SDGs・研修プログラム</h3>
+            <p class="text-sm text-gray-500">若手バディ研修、SDGsワークショップなど、社員向け研修プログラムを設計・実施します。</p>
+          </div>
+
+          <div class="border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">インフルエンサーマーケティング</h3>
+            <p class="text-sm text-gray-500">ソーシャルグッド領域で影響力を持つSGNsメンバーと連携したインフルエンサー施策。</p>
+          </div>
+
+          <div class="border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">共創プロジェクト</h3>
+            <p class="text-sm text-gray-500">企業・団体とSGNsメンバーが協働し、ソーシャルグッドな新規プロジェクトを共創します。</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 実績・メディア ──────────────────────────────────────── -->
+    <section class="py-20 bg-gray-50 px-4">
+      <div class="max-w-4xl mx-auto">
+        <p class="text-sm text-emerald-600 font-bold tracking-widest uppercase mb-2 text-center">Track Record</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-4">
+          活動実績
+        </h2>
+        <p class="text-center text-gray-500 text-sm mb-12 max-w-xl mx-auto">
+          2020年の設立以来、メディア・イノベーション拠点・イベントを通じてソーシャルグッドの「問い」を社会に発信し続けています。
+        </p>
+
+        <!-- メディア連携 -->
+        <h3 class="text-lg font-bold text-gray-700 mb-4 flex items-center gap-2">
+          <span class="w-8 h-0.5 bg-emerald-600 inline-block"></span>
+          メディア連携
+        </h3>
+        <div class="space-y-4 mb-10">
+
+          <a href="https://mainichi.jp/premier/politics/" target="_blank" rel="noopener noreferrer" class="flex gap-4 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow group">
+            <div class="flex-shrink-0 w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" /></svg>
+            </div>
+            <div>
+              <p class="font-bold text-gray-800 mb-1 group-hover:text-emerald-600 transition-colors">毎日新聞 政治プレミア「Social Good Opinion」<span class="inline-block ml-1 text-gray-400 text-xs">&nearr;</span></p>
+              <p class="text-sm text-gray-500">
+                SGNs発起の寄稿連載企画。毎日新聞の政治プレミアにて、Z世代のKOL（キーオピニオンリーダー）がオールドメディアのコンテンツを自身の感性で翻訳・コンテキストを付与し、世代間で同じトピックについて語り「問い」を投げかけ合える下地をつくる取り組み。
+              </p>
+            </div>
+          </a>
+
+          <a href="https://ideasforgood.jp/" target="_blank" rel="noopener noreferrer" class="flex gap-4 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow group">
+            <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+            </div>
+            <div>
+              <p class="font-bold text-gray-800 mb-1 group-hover:text-emerald-600 transition-colors">IDEAS FOR GOOD ライター<span class="inline-block ml-1 text-gray-400 text-xs">&nearr;</span></p>
+              <p class="text-sm text-gray-500">社会をもっとよくする世界のアイデアマガジン「IDEAS FOR GOOD」にて、SGNsメンバーが執筆活動を展開。</p>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- 地域共創プロジェクト -->
+        <h3 class="text-lg font-bold text-gray-700 mb-4 flex items-center gap-2">
+          <span class="w-8 h-0.5 bg-emerald-600 inline-block"></span>
+          地域共創プロジェクト
+        </h3>
+        <div class="space-y-4 mb-10">
+
+          <a href="https://loftwork.com/jp/project/maniwa_sdgs_business" target="_blank" rel="noopener noreferrer" class="flex gap-4 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow group">
+            <div class="flex-shrink-0 w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </div>
+            <div>
+              <p class="font-bold text-gray-800 mb-1 group-hover:text-emerald-600 transition-colors">岡山県真庭市 SDGsビジネスプロジェクト創出プログラム<span class="inline-block ml-1 text-gray-400 text-xs">&nearr;</span></p>
+              <p class="text-sm text-gray-500">
+                株式会社ロフトワーク運営のもと、SDGs未来都市・岡山県真庭市の地域事業者と都市部のビジネスパーソンがチームを組む共創プログラム「Cultivate the future maniwa（カルマニ）」に参画。松川食品株式会社とタッグを組み、Z世代の視点から老舗焼き鳥の新たな価値と可能性を探るプロジェクトを展開。報告会では共同代表の花村・小澤が登壇。
+              </p>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- イノベーション拠点 -->
+        <h3 class="text-lg font-bold text-gray-700 mb-4 flex items-center gap-2">
+          <span class="w-8 h-0.5 bg-emerald-600 inline-block"></span>
+          イノベーション拠点での活動
+        </h3>
+        <div class="space-y-4 mb-10">
+
+          <a href="https://shibuya-qws.com/project/social-good-natives" target="_blank" rel="noopener noreferrer" class="flex gap-4 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow group">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+            </div>
+            <div>
+              <p class="font-bold text-gray-800 mb-1 group-hover:text-emerald-600 transition-colors">SHIBUYA QWS「QWSチャレンジ」第2期 採択プロジェクト<span class="inline-block ml-1 text-gray-400 text-xs">&nearr;</span></p>
+              <p class="text-sm text-gray-500">
+                渋谷スクランブルスクエア内のイノベーション施設 SHIBUYA QWS にて、「<strong class="text-gray-700">『ソーシャルグッド』な概念から社会を再解釈し、世代を超えて共創できるか？</strong>」という問いを掲げ、QWSチャレンジ第2期プロジェクトとして採択。3ヶ月間の活動を経てQWSステージで成果を発表。
+              </p>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- イベント -->
+        <h3 class="text-lg font-bold text-gray-700 mb-4 flex items-center gap-2">
+          <span class="w-8 h-0.5 bg-emerald-600 inline-block"></span>
+          イベント・Meetup
+        </h3>
+        <div class="space-y-4">
+
+          <a href="https://shibuya-qws.com/event/social-good-natives-1st-meetup" target="_blank" rel="noopener noreferrer" class="flex gap-4 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow group">
+            <div class="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+            </div>
+            <div>
+              <p class="font-bold text-gray-800 mb-1 group-hover:text-emerald-600 transition-colors">SGNs 1st Meetup「ソーシャルグッドな社会とは？」<span class="inline-block ml-1 text-gray-400 text-xs">&nearr;</span></p>
+              <p class="text-sm text-gray-500">
+                SHIBUYA QWS PLAY GROUNDにて初のMeetupを開催。「ソーシャルグッドとは何か」をテーマに、Z世代SGNsメンバーによるパネルディスカッション「Z世代がリードする、次世代社会のかたちとは？」を実施。
+              </p>
+            </div>
+          </a>
+
+          <a href="https://shibuya-qws.com/event/social-good-natives-2nd-meetup" target="_blank" rel="noopener noreferrer" class="flex gap-4 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow group">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" /></svg>
+            </div>
+            <div>
+              <p class="font-bold text-gray-800 mb-1 group-hover:text-emerald-600 transition-colors">SGNs #2「"フード・ダイバーシティ"ってなんだろう？」<span class="inline-block ml-1 text-gray-400 text-xs">&nearr;</span></p>
+              <p class="text-sm text-gray-500">
+                第2弾Meetupでは、ベジタリアンやヴィーガンなど「フード・ダイバーシティ」をテーマに開催。SGNsメンバーをゲストに、食の多様性とエシカルな消費について深く掘り下げるディスカッションを実施。
+              </p>
+            </div>
+          </a>
+
+          <a href="https://loftwork.com/jp/event/20220130_maniwabusinessproject" target="_blank" rel="noopener noreferrer" class="flex gap-4 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow group">
+            <div class="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+            </div>
+            <div>
+              <p class="font-bold text-gray-800 mb-1 group-hover:text-emerald-600 transition-colors">真庭市SDGsビジネスプロジェクト 報告会<span class="inline-block ml-1 text-gray-400 text-xs">&nearr;</span></p>
+              <p class="text-sm text-gray-500">
+                「地域企業と都心部ビジネスパーソンの接続。ビジネスに新たな視点の付与を」をテーマに報告会を開催。共同代表の花村・小澤が登壇し、真庭市役所やロフトワークのメンバーとともにトークセッションを実施。
+              </p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── メンバー紹介 ────────────────────────────────────────── -->
+    <section id="members" aria-labelledby="members-heading" class="py-20 bg-white px-4">
+      <div class="max-w-5xl mx-auto">
+        <p class="text-sm text-emerald-600 font-bold tracking-widest uppercase mb-2 text-center">Members</p>
+        <h2 id="members-heading" class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-4">
+          メンバー
+        </h2>
+        <p class="text-center text-gray-500 text-sm mb-12">
+          多様なバックグラウンドを持つメンバーが、それぞれの領域でソーシャルグッドを実践しています。
+        </p>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- メンバーカード -->
+          <div class="bg-gray-50 rounded-2xl p-6 text-center">
+            <div class="w-20 h-20 bg-emerald-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+            </div>
+            <p class="font-bold text-gray-800">花村 Jasmine 茉利子</p>
+            <p class="text-xs text-emerald-600 mb-2">共同代表 / 発起人・統括</p>
+            <p class="text-sm text-gray-500">MODALAVA株式会社ファウンダー。米国から帰国後、ソーシャルグッド世代のエンパワーメントに取り組む。</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-2xl p-6 text-center">
+            <div class="w-20 h-20 bg-emerald-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+            </div>
+            <p class="font-bold text-gray-800">小澤 茉莉</p>
+            <p class="text-xs text-emerald-600 mb-2">共同代表 / PR・コミュニケーション</p>
+            <p class="text-sm text-gray-500">一般社団法人TSUNAGU理事。ウェブメディア「FLAT.」ディレクター。毎日新聞「Social Good Opinion」発起人&コーディネーター。IDEAS FOR GOOD ライター。</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-2xl p-6 text-center">
+            <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" /></svg>
+            </div>
+            <p class="font-bold text-gray-800">あなたも仲間に</p>
+            <p class="text-xs text-gray-400 mb-2">New Member</p>
+            <p class="text-sm text-gray-500">ソーシャルグッドに関心があるすべての方を歓迎します。あなたの得意分野で、一緒に社会を変えませんか？</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── メンバー募集 ────────────────────────────────────────── -->
+    <section id="join" aria-labelledby="join-heading" class="py-24 bg-gradient-to-b from-emerald-50 to-emerald-100 px-4">
+      <div class="max-w-lg mx-auto text-center">
+        <p class="text-sm text-emerald-600 font-bold tracking-widest uppercase mb-2">Join Us</p>
+        <h2 id="join-heading" class="text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
+          メンバー募集
+        </h2>
+        <p class="text-gray-500 text-sm mb-4">
+          ソーシャルグッドな活動に興味がある方、自分の得意分野で社会に貢献したい方を募集しています。
+        </p>
+        <ul class="text-sm text-gray-600 text-left max-w-sm mx-auto mb-8 space-y-2">
+          <li class="flex items-start gap-2">
+            <span class="text-emerald-600 mt-0.5">&#10003;</span>
+            <span>オンラインコミュニティへの参加</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-emerald-600 mt-0.5">&#10003;</span>
+            <span>オフラインイベント・Meetupへの招待</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-emerald-600 mt-0.5">&#10003;</span>
+            <span>企業案件・プロジェクトへの参加機会</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-emerald-600 mt-0.5">&#10003;</span>
+            <span>メンバー同士のネットワーキング</span>
+          </li>
+        </ul>
+
+        <form
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          class="space-y-4"
+        >
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="お名前"
+            class="w-full px-4 py-3 rounded-full border border-emerald-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white"
+          />
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="メールアドレス"
+            class="w-full px-4 py-3 rounded-full border border-emerald-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white"
+          />
+          <input
+            type="text"
+            name="interest"
+            placeholder="興味のある分野（例: エシカルファッション、フードロス）"
+            class="w-full px-4 py-3 rounded-full border border-emerald-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white"
+          />
+          <button
+            type="submit"
+            class="w-full bg-emerald-600 text-white font-bold px-6 py-3 rounded-full hover:bg-emerald-700 transition-all"
+          >
+            参加を申し込む
+          </button>
+        </form>
+        <p class="text-xs text-gray-400 mt-4">無料 / 審査なし / いつでも退会可能</p>
+      </div>
+    </section>
+
+    <!-- ── 企業お問い合わせ ────────────────────────────────────── -->
+    <section id="contact" aria-labelledby="contact-heading" class="py-24 bg-white px-4">
+      <div class="max-w-lg mx-auto text-center">
+        <p class="text-sm text-emerald-600 font-bold tracking-widest uppercase mb-2">Contact</p>
+        <h2 id="contact-heading" class="text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
+          企業案件・お問い合わせ
+        </h2>
+        <p class="text-gray-500 text-sm mb-8">
+          マーケティング、講演、研修、共創プロジェクトなどお気軽にご相談ください。
+        </p>
+
+        <form
+          action="https://formspree.io/f/YOUR_FORM_ID_2"
+          method="POST"
+          class="space-y-4 text-left"
+        >
+          <div>
+            <label for="company" class="block text-sm font-medium text-gray-700 mb-1">企業・団体名</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              required
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            />
+          </div>
+          <div>
+            <label for="contact-name" class="block text-sm font-medium text-gray-700 mb-1">ご担当者名</label>
+            <input
+              type="text"
+              id="contact-name"
+              name="contact_name"
+              required
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            />
+          </div>
+          <div>
+            <label for="contact-email" class="block text-sm font-medium text-gray-700 mb-1">メールアドレス</label>
+            <input
+              type="email"
+              id="contact-email"
+              name="email"
+              required
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            />
+          </div>
+          <div>
+            <label for="inquiry-type" class="block text-sm font-medium text-gray-700 mb-1">お問い合わせ種別</label>
+            <select
+              id="inquiry-type"
+              name="inquiry_type"
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white"
+            >
+              <option value="">選択してください</option>
+              <option value="marketing">ソーシャルグッドマーケティング</option>
+              <option value="lecture">講演・登壇</option>
+              <option value="writing">執筆・メディア</option>
+              <option value="training">SDGs・研修プログラム</option>
+              <option value="influencer">インフルエンサーマーケティング</option>
+              <option value="collaboration">共創プロジェクト</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">お問い合わせ内容</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 resize-none"
+              placeholder="ご相談内容をお聞かせください"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-emerald-700 transition-all"
+          >
+            送信する
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── フッター ──────────────────────────────────────────────── -->
+  <footer class="bg-gray-800 text-gray-400 py-12 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+        <div>
+          <p class="text-white font-bold text-lg mb-1">Social Good Natives</p>
+          <p class="text-sm">一般社団法人ソーシャルグッドネイティブス</p>
+          <p class="text-xs mt-2">東京都中央区日本橋茅場町2-11-5</p>
+        </div>
+        <div class="text-sm space-y-2">
+          <p>設立: 2020年9月</p>
+          <p>法人番号: 3010005032183</p>
+          <div class="flex gap-4 mt-2">
+            <a href="https://www.instagram.com/socialgoodnatives/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://x.com/sgn_community" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-xs text-center">
+        &copy; 2026 一般社団法人 Social Good Natives All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</Layout>

@@ -1,0 +1,70 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Social Good Natives — ソーシャルグッドを、あたりまえに。',
+  description = 'Social Good Natives（SGNs）は、サステナブル・エシカルな社会をリードするデジタルネイティブ世代のコミュニティ・エージェントです。企業向けソーシャルグッドマーケティング、メンバー募集中。',
+} = Astro.props;
+
+const siteUrl = 'https://socialgoodnatives.org';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      "name": "一般社団法人 Social Good Natives",
+      "alternateName": "SGNs",
+      "url": siteUrl,
+      "description": "サステナブル・エシカルな社会をリードするデジタルネイティブ世代のコミュニティ・エージェント。企業のマーケティング、講演、執筆、SDGs研修、インフルエンサーマーケティング等を展開。",
+      "foundingDate": "2020-09-03",
+      "areaServed": { "@type": "Country", "name": "Japan" },
+      "keywords": "ソーシャルグッド, サステナブル, エシカル, SDGs, Social Good, Sustainable, Ethical"
+    }
+  ]
+};
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="Social Good Natives, SGNs, ソーシャルグッド, サステナブル, エシカル, SDGs, デジタルネイティブ, コミュニティ, 企業マーケティング, 講演, インフルエンサー" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="Social Good Natives" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- Canonical -->
+    <link rel="canonical" href={siteUrl} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
